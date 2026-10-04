@@ -1,0 +1,23 @@
+# Gizli bilgiler: asla commit'lenmemeli
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Editör / işletim sistemi
+.idea/
+.vscode/
+.DS_Store
+
+# Diğer
+*.log
+.claude/
+
+# İlk Python denemesi, repoya girmesin
+/test.py

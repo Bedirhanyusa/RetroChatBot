@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RetroChatBot - 1997'nin En Cool Sohbet Robotu!</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23000080'/%3E%3Ctext x='16' y='23' font-size='20' font-family='Arial' font-weight='bold' text-anchor='middle' fill='%23ffff00'%3ER%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <script src="/static/erken.js"></script>
+
+    <div class="ust">
+        <button type="button" id="cag-butonu" class="cag-butonu">
+            <span class="sadece-retro">&gt;&gt;&gt; 2030'A GECIS YAP! &lt;&lt;&lt;</span>
+            <span class="sadece-modern">&#8592; 1997'ye Geri Dön</span>
+        </button>
+
+        <h1 class="baslik">
+            <span class="sadece-retro">~*~ RetroChatBot ~*~</span>
+            <span class="sadece-modern">NeoBot 2030</span>
+        </h1>
+
+        <p class="alt-baslik">
+            <marquee class="sadece-retro" scrollamount="4">Hos geldiniz!!! Internet'in en yeni sohbet robotuyla tanisin!!! Sitemiz Netscape Navigator 3.0 ile en iyi gorunur.</marquee>
+            <span class="sadece-modern">Sinirsel ağa bağlısın &middot; Gecikme: 0.2 ms &middot; Gelecek burada.</span>
+        </p>
+    </div>
+
+    <table class="ana-tablo" align="center" cellpadding="6" cellspacing="0" border="2">
+        <tr>
+            <td class="menu" valign="top" width="150">
+                <div class="sadece-retro">
+                    <b>:: MENU ::</b><br><br>
+                    &gt; Ana Sayfa<br>
+                    &gt; Sohbet<br>
+                    &gt; Ziyaretci Defteri<br>
+                    &gt; Linkler<br>
+                    &gt; Bana Yaz<br>
+                </div>
+                <div class="sadece-modern">
+                    <b>MENÜ</b>
+                    <ul class="menu-liste">
+                        <li>Ana Sayfa</li>
+                        <li class="aktif">Sohbet</li>
+                        <li>Hologram Odası</li>
+                        <li>Kuantum Bulut</li>
+                        <li>Ayarlar</li>
+                    </ul>
+                </div>
+                <hr>
+                <b class="sadece-retro">Ziyaretci No:</b>
+                <b class="sadece-modern">Çevrimiçi:</b><br>
+                <span class="sayac" id="sayac">000000</span>
+                <hr>
+                <b class="sadece-retro">Tarih / Saat:</b>
+                <b class="sadece-modern">Neo-İstanbul:</b><br>
+                <span class="saat" id="saat">--:--:--</span>
+                <hr>
+                <small class="sadece-retro">
+                    En iyi 800x600<br>
+                    cozunurlukte<br>
+                    gorunur.
+                </small>
+                <small class="sadece-modern">
+                    Her cihazda<br>
+                    akıcı çalışır.
+                </small>
+            </td>
+
+            <td valign="top" class="sohbet-alani">
+                <div class="sohbet-baslik">
+                    <span class="sadece-retro">Robotla Sohbet Et!</span>
+                    <span class="sadece-modern">Yapay Zekayla Konuş</span>
+                    <span class="pencere-dugmeleri sadece-retro"><i>_</i><i>&#9633;</i><i>x</i></span>
+                    <span class="canli sadece-modern">canlı</span>
+                </div>
+                <div id="mesajlar" class="mesajlar" role="log" aria-live="polite"></div>
+
+                <div id="oneriler" class="oneriler"></div>
+
+                <form id="form" class="form">
+                    <input type="text" id="girdi" maxlength="2000" autocomplete="off" placeholder="Mesajini yaz...">
+                    <input type="submit" id="gonder" value="GONDER">
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <div class="alt-alan">
+        <hr width="80%">
+        <div class="rozetler">
+            <span class="sadece-retro rozet-grup">
+                <span class="rozet r1">Netscape<br>Now!</span>
+                <span class="rozet r2">Windows<br>95</span>
+                <span class="rozet r3">Made with<br>Notepad</span>
+                <span class="rozet r4">56k<br>modem</span>
+            </span>
+            <span class="sadece-modern rozet-grup">
+                <span class="rozet r1">6G</span>
+                <span class="rozet r2">Kuantum Şifreli</span>
+                <span class="rozet r3">Otonom Ağ</span>
+                <span class="rozet r4">Karbon Nötr</span>
+            </span>
+        </div>
+        <p class="alt">
+            <span class="sadece-retro">
+                <b>Bu sayfa 1997 yilinda yapilmistir.</b><br>
+                Copyright &copy; 1997 RetroChatBot. Tum haklari saklidir.<br>
+                <span class="yanip">** YAPIM ASAMASINDA **</span>
+            </span>
+            <span class="sadece-modern">
+                <b>Bu sayfa 2030 yılında, otonom bir ağda üretilmiştir.</b><br>
+                &copy; 2030 NeoBot. Veriler kuantum şifreli.
+            </span>
+        </p>
+    </div>
+
+    <!-- Tarayıcı durum çubuğu (1997) / bağlantı hapı (2030) -->
+    <div id="durum" class="durum"></div>
+
+    <!-- 1997: çevirmeli bağlantı penceresi -->
+    <div id="giris" class="giris">
+        <div class="giris-pencere">
+            <div class="giris-baslik">Baglaniyor...</div>
+            <div class="giris-icerik">
+                <div class="giris-ust">
+                    <span class="modem-simge">&#9742;</span>
+                    <span id="giris-metin">Numara cevriliyor...</span>
+                </div>
+                <div class="ilerleme"><div id="ilerleme-dolgu" class="ilerleme-dolgu"></div></div>
+                <small>Atlamak icin tikla</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Çağlar arası geçiş animasyonu -->
+    <div id="gecis" class="gecis" hidden>
+        <canvas id="gecis-tuval"></canvas>
+        <div class="gecis-yazi">
+            <div id="gecis-yil" class="gecis-yil">1997</div>
+            <div id="gecis-etiket" class="gecis-etiket"></div>
+        </div>
+    </div>
+
+    <div id="aura" class="aura"></div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
